@@ -42,15 +42,15 @@ npm run prettier
 
 1. To go to the main page use the following url
 
-> <https://localhost:3000/>
+> <http://localhost:3000/>
 
 1. To go to the API list use the following url
 
-> <https://localhost:3000/api>
+> <http://localhost:3000/api>
 
 1. to go to the Image Processing API use the following url
 
-> <https://localhost:3000/api/image>
+> <http://localhost:3000/api/image>
 
 1. to list the images in the database use the following url
 
