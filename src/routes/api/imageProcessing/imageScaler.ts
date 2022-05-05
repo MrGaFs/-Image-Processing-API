@@ -36,6 +36,8 @@ class ImageScaler {
 			});
 	}
 	public async scale():Promise<[string, boolean]>{
+		if(!await this.exist('assets/thumb'))
+			fs.mkdir('assets/thumb');
 		if(!(await this.exist(this.getOriginalFile())))
 			throw new Error(`This img not in the database`);
 		const isExist = await this.isExist();
@@ -44,9 +46,5 @@ class ImageScaler {
 		return [this.getScaledVersion(), isExist];
 	}
 
-}
-const scaleImage = (inputFile: string, hight: number, width: number): string => {
-	let outPut = ``;
-	return outPut;
 }
 export default ImageScaler;

@@ -4,7 +4,7 @@ import apiRouter from "./routes/api";
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
+app.get('/', (req: express.Request, res: express.Response): void => {
 	res.send(`<h1>Hello and welcome To my website</h1>
 	<h3>forgive my boring HTML 😅</h3>
 	<a href='/api'>api list</a>
