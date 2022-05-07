@@ -2,7 +2,7 @@
   "name": "img_processing_api",
   "version": "1.0.0",
   "description": "It's an api that resize the image according to the URL",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "build": "npx tsc",
     "jasmine": "jasmine",
