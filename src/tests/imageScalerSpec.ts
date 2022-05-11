@@ -20,4 +20,11 @@ describe('Make sure that the links provided are correct and the pic is cached', 
 			['assets/thumb/encenadaport_thumb300X300.jpg', true]
 		);
 	});
+	it('Error testing', async() => {
+		let error:Error = new Error();
+		const expectedError = new Error('This img not in the database');
+		try { await new ImageScaler('random', 300, 300).scale(); }
+		catch (e) { error = e as Error; }
+		expect(error).toEqual(expectedError);
+	});
 });
